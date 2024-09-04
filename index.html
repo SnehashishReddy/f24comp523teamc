@@ -26,19 +26,203 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Page Header -->
-    <header>
-      <h1>Welcome to Your Website</h1>
+    <header class="mb-5">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">COMP 523 Team C</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Deliverables
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Team
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Assignments
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Meeting Journal</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Final Deliverables
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Page Main Content -->
-    <main>
-      <p>This is your main content area.</p>
+    <main class="flex-grow-1">
+      <div>
+        <p>RA/TA/LA Matching</p>
+        <p>
+          A web application that intends to help departments match students with
+          Research Assistant, Teaching Assistant, and Learning Assistant posts
+        </p>
+      </div>
+      <div>
+        <p>Project Proposal</p>
+        <p>
+          I would like to work with a team to develop a tool to automate the
+          semesterly task of matching students with jobs in the Dept of Computer
+          Science.
+        </p>
+
+        <p>
+          Background: Each semester, there are 4-5 of us who have to perform the
+          complex task of filling RA/TA/LA positions for all of our research
+          projects and courses. This task is a complex matching problem, esp.
+          before the start of the fall semester, when it can involve around
+          50-60 graduate students, 20-30 research projects, 20-30 graduate TA
+          positions, and around 100 LA positions. There are lots of constraints
+          and preferences to accommodate as well. I would like a software tool
+          to automate this task, even if it requires some small final manual
+          cleanup.
+        </p>
+
+        <p>
+          Task Detail: This task entails (i) first matching graduate students
+          with RA positions, as much as possible; (ii) for those grad students
+          who did not find a good match with an RA position, placing them as TAs
+          in appropriate courses; (iii) hiring as many LAs as required to fully
+          staff the courses. There are constraints (e.g., a TA/LA should have
+          taken the course before) and preferences to accommodate.
+        </p>
+
+        <p>
+          Algorithm Formulation: I have a general idea that the core of this
+          problem might lend itself to an integer linear programming (ILP)
+          formulation. In particular, there are constraints to be satisfied (how
+          many TA/LAs for a given course size, all graduate students with a
+          funding guarantee must be matched with a job), and there are things to
+          be optimized (instructors' and students' preferences). So, this is a
+          constrained optimization problem. We should be able to leverage
+          open-source ILP solvers; in that case the problem becomes transforming
+          the data into an ILP problem.
+        </p>
+
+        <p>
+          User Interface: It would be nice to have a simple interface to specify
+          instructor's and students' preferences and other constraints. At a
+          bare minimum, a text file or spreadsheet will suffice. If there is
+          time and interest, we could use a nicer data entry interface. We may
+          also be able to integrate with a system developed in the XL lab for
+          user input.
+        </p>
+
+        <p>
+          Platform: The tool does not need to be mobile. A web based app might
+          be nice so it can be used from different computers. Something that
+          could pull data from a spreadsheet (Google Sheet) would be nice though
+          not required. A Google sheet has the benefit of being attached to a
+          form where preferences and constraints and lists etc. can be
+          populated.
+        </p>
+      </div>
     </main>
 
     <!-- Page Footer -->
-    <footer>
+    <footer class="bg-light py-3 mt-auto">
       <div class="container-fluid">
         <div class="row justify-content-center text-center mb-4">
           <div class="col-auto">
@@ -85,13 +269,15 @@
               Client: Dr. Montek Singh [UNC College of Arts and Sciences,
               Department of Computer Science]
             </div>
-            <div><a href="mailto:montek@cs.unc.edu">montek@cs.unc.edu</a></div>
+            <div>
+              <a href="mailto:montek@cs.unc.edu">montek@cs.unc.edu</a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Boostrap v5.3.3 JS Bundle CDN -->
+    <!-- Bootstrap v5.3.3 JS Bundle CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
