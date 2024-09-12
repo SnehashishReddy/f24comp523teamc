@@ -23,7 +23,28 @@
     />
 
     <!-- Stylesheets go here -->
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- Crucial JS goes here -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const repoName = "/f24comp523teamc"; // Your repo name
+        const isGitHubPages =
+          window.location.hostname === "snehashishreddy.github.io";
+
+        if (isGitHubPages) {
+          // Dynamically set the base URL for GitHub Pages
+          const base = document.createElement("base");
+          base.href = repoName + "/";
+          document.head.appendChild(base);
+        } else {
+          // Locally, the base remains the root
+          const base = document.createElement("base");
+          base.href = "/";
+          document.head.appendChild(base);
+        }
+      });
+    </script>
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -283,21 +304,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- JavaScript goes here -->
-    <script src="js/index.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const repoName = "/f24comp523teamc"; // Your GitHub Pages repo name
-
-        // Check if the site is running on GitHub Pages
-        if (window.location.hostname === "snehashishreddy.github.io") {
-          document.querySelectorAll(".nav-link").forEach(function (link) {
-            // Prepend the repository name to the link
-            let href = link.getAttribute("href");
-            link.setAttribute("href", repoName + href);
-          });
-        }
-      });
-    </script>
+    <!-- Non-Crucial JavaScript goes here -->
+    <script src="/js/index.js"></script>
   </body>
 </html>
