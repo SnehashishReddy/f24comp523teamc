@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Page Title -->
-    <title>Fall 2024 COMP 523 Team C</title>
+    <title>Team C</title>
 
     <!-- Bootstrap v5.3.3 CSS CDN -->
     <link
@@ -43,7 +43,7 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/index.html">COMP 523 Team C</a>
+            <a class="navbar-brand" href="/index.html">RA/TA/LA Matching</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -217,9 +217,7 @@
 
     <!-- Page Main Content -->
     <main class="flex-grow-1">
-      <div>
-        <h1>Navigation Testing</h1>
-      </div>
+      <h1>Navigation Testing</h1>
     </main>
 
     <!-- Page Footer -->
@@ -287,5 +285,19 @@
 
     <!-- JavaScript goes here -->
     <script src="js/index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const repoName = "/f24comp523teamc"; // Your GitHub Pages repo name
+
+        // Check if the site is running on GitHub Pages
+        if (window.location.hostname === "snehashishreddy.github.io") {
+          document.querySelectorAll(".nav-link").forEach(function (link) {
+            // Prepend the repository name to the link
+            let href = link.getAttribute("href");
+            link.setAttribute("href", repoName + href);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

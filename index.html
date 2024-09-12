@@ -43,11 +43,7 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-<<<<<<< HEAD
-            <a class="navbar-brand" href="/index.html">COMP 523 Team C</a>
-=======
-            <a class="navbar-brand" href="#">RA/TA/LA Matching<p style="font-size: medium">Team C</p></a>
->>>>>>> cfbca8d93a943c84b057bee23498300ee94c94eb
+            <a class="navbar-brand" href="/index.html">RA/TA/LA Matching</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -354,5 +350,19 @@
 
     <!-- JavaScript goes here -->
     <script src="js/index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const repoName = "/f24comp523teamc"; // Your GitHub Pages repo name
+
+        // Check if the site is running on GitHub Pages
+        if (window.location.hostname === "snehashishreddy.github.io") {
+          document.querySelectorAll(".nav-link").forEach(function (link) {
+            // Prepend the repository name to the link
+            let href = link.getAttribute("href");
+            link.setAttribute("href", repoName + href);
+          });
+        }
+      });
+    </script>
   </body>
 </html>
