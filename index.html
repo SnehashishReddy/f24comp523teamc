@@ -90,11 +90,18 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!-- Page Header -->
-    <header class="mb-5">
+    <header style="margin-bottom: 50px">
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <div class="container-fluid">
+        <nav
+          style="background-color: #007bff"
+          class="navbar navbar-expand-lg navbar-dark"
+        >
+          <div
+            style="max-width: 1200px; margin: 0 auto; padding: 0 15px"
+            class="container-fluid"
+          >
             <button
+              style="border: none"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -105,21 +112,39 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">RA/TA/LA Matching</a>
+            <a
+              href="index.html"
+              style="
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #ffffff;
+                text-decoration: none;
+              "
+              class="navbar-brand"
+            >
+              RA/TA/LA Matching
+            </a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0"
+                style="font-size: 16px"
+              >
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownTeam"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Team
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownTeam"
+                  >
                     <li>
                       <a class="dropdown-item" href="pages/team/schedule.html"
                         >Schedule</a
@@ -137,26 +162,34 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link"
                     aria-current="page"
                     href="pages/meeting_journal.html"
-                    >Meeting Journal</a
+                    style="color: #ffffff; text-decoration: none"
                   >
+                    Meeting Journal
+                  </a>
                 </li>
+
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownDeliverables"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Deliverables
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownDeliverables"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -173,18 +206,23 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownPresentations"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Presentations
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownPresentations"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -206,14 +244,18 @@
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownAssignments"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Assignments
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownAssignments"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -239,133 +281,185 @@
 
     <!-- Page Main Content -->
     <main class="flex-grow-1">
-      <div>
-        <b>RA/TA/LA Matching</b><br />
-        The RA/TA/LA Matching Web Application aims to automate the complex
-        process of assigning graduate students to Research Assistant (RA),
-        Teaching Assistant (TA), and Learning Assistant (LA) positions within
-        the Department of Computer Science.
+      <div
+        style="
+          font-family: Arial, sans-serif;
+          color: #333;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        "
+      >
+        <b style="font-size: 20px">RA/TA/LA Matching</b>
+        <p>
+          The RA/TA/LA Matching Web Application aims to automate the complex
+          process of assigning graduate students to Research Assistant (RA),
+          Teaching Assistant (TA), and Learning Assistant (LA) positions within
+          the Department of Computer Science.
+        </p>
 
-        <br /><br />
-        <b>Description</b><br />
-        Each semester, a small team of faculty members is tasked with the
-        challenging job of matching graduate students with various positions,
-        including Research Assistant (RA), Teaching Assistant (TA), and Learning
-        Assistant (LA) roles. This matching process is critical to the
-        functioning of the Department of Computer Science, as these positions
-        play a significant role in supporting both research initiatives and
-        instructional activities.
-        <br /><br />
-        The complexity of this task is particularly pronounced at the beginning
-        of the fall semester, when the volume of candidates and available
-        positions reaches its peak. There may be as many as 50 to 60 graduate
-        students seeking employment opportunities, alongside 20 to 30 research
-        projects that require dedicated RAs to assist with their development and
-        execution. Additionally, around 100 LA positions must be filled to
-        ensure that undergraduate courses are adequately supported.
-        <br /><br />
-        Each of these roles has its own unique requirements and expectations,
-        leading to a multifaceted matching scenario. For instance, RAs often
-        need specific skills or backgrounds to contribute effectively to
-        particular research projects, while TAs and LAs may be selected based on
-        their familiarity with the course material and prior experience. The
-        matching process is further complicated by a variety of constraints and
-        preferences—such as scheduling conflicts, funding guarantees for certain
-        students, and instructors' specific needs for their courses.
-        <br /><br />
-        Given the intricate nature of this matching process, relying on manual
-        methods becomes inefficient and prone to errors. Faculty members often
-        find themselves overwhelmed with administrative tasks, consuming
-        valuable time and resources that could otherwise be directed toward
-        teaching and research. As a result, there is a pressing need for an
-        automated solution that can streamline the matching process, improve
-        accuracy, and ultimately enhance the overall experience for both
-        students and faculty.
+        <b style="font-size: 20px">Description</b>
+        <p>
+          Each semester, a small team of faculty members is tasked with the
+          challenging job of matching graduate students with various positions,
+          including Research Assistant (RA), Teaching Assistant (TA), and
+          Learning Assistant (LA) roles. This matching process is critical to
+          the functioning of the Department of Computer Science, as these
+          positions play a significant role in supporting both research
+          initiatives and instructional activities.
+        </p>
+        <p>
+          The complexity of this task is particularly pronounced at the
+          beginning of the fall semester, when the volume of candidates and
+          available positions reaches its peak. There may be as many as 50 to 60
+          graduate students seeking employment opportunities, alongside 20 to 30
+          research projects that require dedicated RAs to assist with their
+          development and execution. Additionally, around 100 LA positions must
+          be filled to ensure that undergraduate courses are adequately
+          supported.
+        </p>
+        <p>
+          Each of these roles has its own unique requirements and expectations,
+          leading to a multifaceted matching scenario. For instance, RAs often
+          need specific skills or backgrounds to contribute effectively to
+          particular research projects, while TAs and LAs may be selected based
+          on their familiarity with the course material and prior experience.
+          The matching process is further complicated by a variety of
+          constraints and preferences—such as scheduling conflicts, funding
+          guarantees for certain students, and instructors' specific needs for
+          their courses.
+        </p>
+        <p>
+          Given the intricate nature of this matching process, relying on manual
+          methods becomes inefficient and prone to errors. Faculty members often
+          find themselves overwhelmed with administrative tasks, consuming
+          valuable time and resources that could otherwise be directed toward
+          teaching and research. As a result, there is a pressing need for an
+          automated solution that can streamline the matching process, improve
+          accuracy, and ultimately enhance the overall experience for both
+          students and faculty.
+        </p>
 
-        <br /><br />
-        <b>Task Details:</b><br />
-        The primary objectives of the tool include:
-        <ol>
-          <li>
+        <b style="font-size: 20px">Task Details:</b>
+        <ol style="padding-left: 20px">
+          <li style="margin-bottom: 10px">
             <b>Matching Graduate Students with RA Positions:</b> Prioritize
             assigning graduate students to RA roles based on their
             qualifications and project requirements.
           </li>
-
-          <li>
+          <li style="margin-bottom: 10px">
             <b>Assigning TAs:</b> For those who do not secure an RA position,
             the tool will flag them and then they will be handed off to the XL
             Labs tool to secure their position.
           </li>
         </ol>
-        <b>User Interface</b>
-        <br />The application will feature a straightforward interface allowing
-        users to specify constraints and preferences easily. At minimum, a text
-        file or spreadsheet input will be sufficient. If time and resources
-        allow, a more user-friendly data entry interface will be developed,
-        potentially integrating with existing systems in the XL lab for user
-        input.
 
-        <br /><br />
-        <b>Platform</b>
-        <br />The tool will be a web-based application, enabling access from
-        various devices. Ideally, it will support integration with Google Sheets
-        for data input, facilitating real-time updates and easy collaboration
-        among users.
+        <b style="font-size: 20px">User Interface</b>
+        <p>
+          The application will feature a straightforward interface allowing
+          users to specify constraints and preferences easily. At minimum, a
+          text file or spreadsheet input will be sufficient. If time and
+          resources allow, a more user-friendly data entry interface will be
+          developed, potentially integrating with existing systems in the XL lab
+          for user input.
+        </p>
+
+        <b style="font-size: 20px">Platform</b>
+        <p>
+          The tool will be a web-based application, enabling access from various
+          devices. Ideally, it will support integration with Google Sheets for
+          data input, facilitating real-time updates and easy collaboration
+          among users.
+        </p>
       </div>
     </main>
 
     <!-- Page Footer -->
-    <footer class="bg-light py-3 mt-auto">
-      <div class="container-fluid">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <span class="footer-contact-us-title">Contact Us</span>
-              <a
-                href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
-                class="ms-2"
-              >
-                <i class="bi bi-envelope-fill footer-envelope-icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center mb-4">
-          <div>
+    <footer
+      style="background-color: #f8f9fa; padding: 20px 0; margin-top: auto"
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          color: #333;
+        "
+      >
+        <div style="margin-bottom: 30px">
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <span style="font-weight: bold; font-size: 18px">Contact Us</span>
             <a
               href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
-              >Send the team an email!</a
+              style="margin-left: 10px; color: #007bff; text-decoration: none"
             >
+              <i class="bi bi-envelope-fill" style="font-size: 1.5em"></i>
+            </a>
           </div>
         </div>
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-4">
-            <div class="footer-team-member-names">Kunal Krishna</div>
-            <div><a href="mailto:kk85@cs.unc.edu">kk85@cs.unc.edu</a></div>
-          </div>
-          <div class="col-4">
-            <div class="footer-team-member-names">Snehashish Reddy Manda</div>
-            <div>
-              <a href="mailto:msreddy@cs.unc.edu">msreddy@cs.unc.edu</a>
+
+        <div style="margin-bottom: 30px">
+          <a
+            href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
+            style="font-size: 16px; color: #007bff; text-decoration: none"
+            >Send the team an email!</a
+          >
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <div style="display: flex; justify-content: center; gap: 50px">
+            <div style="text-align: center">
+              <div style="font-weight: bold">Kunal Krishna</div>
+              <div>
+                <a
+                  href="mailto:kk85@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >kk85@cs.unc.edu</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="footer-team-member-names">Yashas Majmudar</div>
-            <div>
-              <a href="mailto:yashashm@cs.unc.edu">yashashm@cs.unc.edu</a>
+
+            <div style="text-align: center">
+              <div style="font-weight: bold">Snehashish Reddy Manda</div>
+              <div>
+                <a
+                  href="mailto:msreddy@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >msreddy@cs.unc.edu</a
+                >
+              </div>
+            </div>
+
+            <div style="text-align: center">
+              <div style="font-weight: bold">Yashas Majmudar</div>
+              <div>
+                <a
+                  href="mailto:yashashm@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >yashashm@cs.unc.edu</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-12">
-            <div class="footer-client-name">
-              Client: Dr. Montek Singh [UNC College of Arts and Sciences,
-              Department of Computer Science]
-            </div>
-            <div>
-              <a href="mailto:montek@cs.unc.edu">montek@cs.unc.edu</a>
-            </div>
+
+        <div style="margin-bottom: 20px">
+          <div style="font-weight: bold; font-size: 16px">
+            Client: Dr. Montek Singh
+          </div>
+          <div style="font-size: 14px">
+            [UNC College of Arts and Sciences, Department of Computer Science]
+          </div>
+          <div>
+            <a
+              href="mailto:montek@cs.unc.edu"
+              style="color: #007bff; text-decoration: none"
+              >montek@cs.unc.edu</a
+            >
           </div>
         </div>
       </div>

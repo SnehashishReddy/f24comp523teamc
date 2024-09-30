@@ -90,11 +90,18 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!-- Page Header -->
-    <header class="mb-5">
+    <header style="margin-bottom: 50px">
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <div class="container-fluid">
+        <nav
+          style="background-color: #007bff"
+          class="navbar navbar-expand-lg navbar-dark"
+        >
+          <div
+            style="max-width: 1200px; margin: 0 auto; padding: 0 15px"
+            class="container-fluid"
+          >
             <button
+              style="border: none"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -105,21 +112,39 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">RA/TA/LA Matching</a>
+            <a
+              href="index.html"
+              style="
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #ffffff;
+                text-decoration: none;
+              "
+              class="navbar-brand"
+            >
+              RA/TA/LA Matching
+            </a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0"
+                style="font-size: 16px"
+              >
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownTeam"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Team
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownTeam"
+                  >
                     <li>
                       <a class="dropdown-item" href="pages/team/schedule.html"
                         >Schedule</a
@@ -137,26 +162,34 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link"
                     aria-current="page"
                     href="pages/meeting_journal.html"
-                    >Meeting Journal</a
+                    style="color: #ffffff; text-decoration: none"
                   >
+                    Meeting Journal
+                  </a>
                 </li>
+
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownDeliverables"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Deliverables
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownDeliverables"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -173,18 +206,23 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownPresentations"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Presentations
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownPresentations"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -206,14 +244,18 @@
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdownAssignments"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    style="color: #ffffff; text-decoration: none"
                   >
                     Assignments
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownAssignments"
+                  >
                     <li>
                       <a
                         class="dropdown-item"
@@ -239,112 +281,185 @@
 
     <!-- Page Main Content -->
     <main class="flex-grow-1">
-      <div>
-        <h1>Journal</h1>
-        <h4>25/SEP/2024 11:00AM [COACH]</h4>
-        <p>
-          Meeting with coach to review changes to the problem statement, and
-          decide work for the week.
-        </p>
-        <h4>25/SEP/2024 10:30AM [TEAM]</h4>
-        <p>
-          Team Meeting to discuss user stories, and discuss on the platform to
-          use.
-        </p>
-        <h4>24/SEP/2024 11:00AM [CLIENT]</h4>
-        <p>
-          Met with the client to discuss the new requirements, finalize the flow
-          of the process, and decide which algorithms to use in the end.
-        </p>
-        <h4>20/SEP/2024 8:00PM [TEAM]</h4>
-        <p>
-          Team meeting to discuss and brainstorm questions to be asked to the
-          client in the next meeting.
-        </p>
-        <h4>18/SEP/2024 11:00AM [COACH]</h4>
-        <p>
-          Met with Sam Shi on a Zoom call to discuss progress on the project.
-          Ashish was not able to attend this meeting.
-        </p>
-        <h4>16/SEP/2024 8:00PM [TEAM]</h4>
-        <p>
-          Team meeting to discuss options between Frontend Flutter, ReactJS.
-          Backend options are: JavaScript, Python, Java, and GCP.
-        </p>
-        <h4>11/SEP/2024 11:30AM [TEAM]</h4>
-        <p>
-          Met on a Zoom call to discuss requirements, form deadline for the
-          project website, and discuss roles.
-        </p>
-        <h4>11/SEP/2024 11:00AM [COACH]</h4>
-        <p>
-          Met with Sam Shi on a Zoom call to discuss the project, get to know
-          each other, and track progress on the project website
-        </p>
-        <h4>10/SEP/2024 11:00AM [CLIENT]</h4>
-        <p>
-          Met with client for basic requirement analysis. Snehashish was not
-          able to attend.
-        </p>
-        <h4>04/SEP/2024 2:30PM [TEAM]</h4>
-        <p>
-          Met in the library to discuss development strategy, plan for client
-          meeting, and decide on the project platform
-        </p>
+      <div
+        style="
+          font-family: Arial, sans-serif;
+          color: #333;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
+        "
+      >
+        <h1 style="color: #2a7ae2; margin-bottom: 20px">Journal</h1>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">25/SEP/2024 11:00AM [COACH]</h4>
+          <p>
+            Meeting with coach to review changes to the problem statement, and
+            decide work for the week.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">25/SEP/2024 10:30AM [TEAM]</h4>
+          <p>
+            Team meeting to discuss user stories, and decide on the platform to
+            use.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">24/SEP/2024 11:00AM [CLIENT]</h4>
+          <p>
+            Met with the client to discuss the new requirements, finalize the
+            flow of the process, and decide which algorithms to use in the end.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">20/SEP/2024 8:00PM [TEAM]</h4>
+          <p>
+            Team meeting to discuss and brainstorm questions to be asked to the
+            client in the next meeting.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">18/SEP/2024 11:00AM [COACH]</h4>
+          <p>
+            Met with Sam Shi on a Zoom call to discuss progress on the project.
+            Ashish was not able to attend this meeting.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">16/SEP/2024 8:00PM [TEAM]</h4>
+          <p>
+            Team meeting to discuss options between frontend frameworks:
+            Flutter, ReactJS. Backend options considered were: JavaScript,
+            Python, Java, and GCP.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">11/SEP/2024 11:30AM [TEAM]</h4>
+          <p>
+            Met on a Zoom call to discuss requirements, set deadlines for the
+            project website, and discuss team roles.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">11/SEP/2024 11:00AM [COACH]</h4>
+          <p>
+            Met with Sam Shi on a Zoom call to discuss the project, get to know
+            each other, and track progress on the project website.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">10/SEP/2024 11:00AM [CLIENT]</h4>
+          <p>
+            Met with client for basic requirement analysis. Snehashish was not
+            able to attend.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <h4 style="color: #2a7ae2">04/SEP/2024 2:30PM [TEAM]</h4>
+          <p>
+            Met in the library to discuss development strategy, plan for client
+            meeting, and decide on the project platform.
+          </p>
+        </div>
       </div>
     </main>
 
     <!-- Page Footer -->
-    <footer class="bg-light py-3 mt-auto">
-      <div class="container-fluid">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <span class="footer-contact-us-title">Contact Us</span>
-              <a
-                href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
-                class="ms-2"
-              >
-                <i class="bi bi-envelope-fill footer-envelope-icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center mb-4">
-          <div>
+    <footer
+      style="background-color: #f8f9fa; padding: 20px 0; margin-top: auto"
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          color: #333;
+        "
+      >
+        <div style="margin-bottom: 30px">
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <span style="font-weight: bold; font-size: 18px">Contact Us</span>
             <a
               href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
-              >Send the team an email!</a
+              style="margin-left: 10px; color: #007bff; text-decoration: none"
             >
+              <i class="bi bi-envelope-fill" style="font-size: 1.5em"></i>
+            </a>
           </div>
         </div>
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-4">
-            <div class="footer-team-member-names">Kunal Krishna</div>
-            <div><a href="mailto:kk85@cs.unc.edu">kk85@cs.unc.edu</a></div>
-          </div>
-          <div class="col-4">
-            <div class="footer-team-member-names">Snehashish Reddy Manda</div>
-            <div>
-              <a href="mailto:msreddy@cs.unc.edu">msreddy@cs.unc.edu</a>
+
+        <div style="margin-bottom: 30px">
+          <a
+            href="mailto:kk85@cs.unc.edu,msreddy@cs.unc.edu,yashashm@cs.unc.edu"
+            style="font-size: 16px; color: #007bff; text-decoration: none"
+            >Send the team an email!</a
+          >
+        </div>
+
+        <div style="margin-bottom: 30px">
+          <div style="display: flex; justify-content: center; gap: 50px">
+            <div style="text-align: center">
+              <div style="font-weight: bold">Kunal Krishna</div>
+              <div>
+                <a
+                  href="mailto:kk85@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >kk85@cs.unc.edu</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="footer-team-member-names">Yashas Majmudar</div>
-            <div>
-              <a href="mailto:yashashm@cs.unc.edu">yashashm@cs.unc.edu</a>
+
+            <div style="text-align: center">
+              <div style="font-weight: bold">Snehashish Reddy Manda</div>
+              <div>
+                <a
+                  href="mailto:msreddy@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >msreddy@cs.unc.edu</a
+                >
+              </div>
+            </div>
+
+            <div style="text-align: center">
+              <div style="font-weight: bold">Yashas Majmudar</div>
+              <div>
+                <a
+                  href="mailto:yashashm@cs.unc.edu"
+                  style="color: #007bff; text-decoration: none"
+                  >yashashm@cs.unc.edu</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-12">
-            <div class="footer-client-name">
-              Client: Dr. Montek Singh [UNC College of Arts and Sciences,
-              Department of Computer Science]
-            </div>
-            <div>
-              <a href="mailto:montek@cs.unc.edu">montek@cs.unc.edu</a>
-            </div>
+
+        <div style="margin-bottom: 20px">
+          <div style="font-weight: bold; font-size: 16px">
+            Client: Dr. Montek Singh
+          </div>
+          <div style="font-size: 14px">
+            [UNC College of Arts and Sciences, Department of Computer Science]
+          </div>
+          <div>
+            <a
+              href="mailto:montek@cs.unc.edu"
+              style="color: #007bff; text-decoration: none"
+              >montek@cs.unc.edu</a
+            >
           </div>
         </div>
       </div>
