@@ -108,14 +108,6 @@
             <a class="navbar-brand" href="index.html">RA/TA/LA Matching</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="pages/project_intro.html"
-                    >Project Intro</a
-                  >
-                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -177,34 +169,6 @@
                         class="dropdown-item"
                         href="pages/deliverables/design_document.html"
                         >Design Document</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="pages/deliverables/test_plan.html"
-                        >Test Plan</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="pages/deliverables/user_manual.html"
-                        >User Manual</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="pages/deliverables/code.html"
-                        >Code</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="pages/deliverables/hand_off_plan.html"
-                        >Hand-off Plan</a
                       >
                     </li>
                   </ul>
@@ -336,142 +300,157 @@
         </div>
       </div>
       <div>
-        <h1>2. Functional Requirements</h1>
+        <h1>2. Requirements</h1>
         <div>
-          <p style="font-weight: bold">
-            1. User Authentication and Authorization
-          </p>
-          <ul>
-            <li>
-              The system shall allow professors and graduate students to create
-              user accounts with secure login capabilities.
-            </li>
-            <li>
-              The system shall provide role-based access control, ensuring that
-              professors and students have access to appropriate
-              functionalities.
-            </li>
-          </ul>
+          <h2>Functional Requirements</h2>
+          <h3>Priority: Definite</h3>
+          <div>
+            <h4>-> Preference Submission for Professors</h4>
+            <ul>
+              <li>
+                The system shall provide a form for professors to input their
+                preferences for TA and LA candidates.
+              </li>
+              <li>
+                The form shall allow professors to add custom questions to
+                capture specific criteria for matching.
+              </li>
+              <li>
+                The system shall save and retrieve professor preferences for
+                future reference.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>-> Student Profile Creation</h4>
+            <ul>
+              <li>
+                The system shall allow graduate students to create profiles with
+                personal details, qualifications, preferences, and constraints.
+              </li>
+              <li>
+                The system shall enable students to specify their desired roles
+                (RA, TA, or LA) and any scheduling conflicts.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>-> Matching Algorithm</h4>
+            <ul>
+              <li>
+                The algorithm shall consider constraints (e.g., course
+                prerequisites, funding guarantees) and preferences (e.g.,
+                professor and student preferences) when generating matches.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>-> Review and Decision-Making for Professors</h4>
+            <ul>
+              <li>
+                The system shall provide professors with a detailed overview of
+                matched students, including their qualifications and
+                preferences.
+              </li>
+              <li>
+                Professors shall have the option to accept or reject each
+                matched student through the web interface.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>-> Data Management and Reporting</h4>
+            <ul>
+              <li>
+                The system shall allow administrators to manage and oversee user
+                accounts, preferences, and matching outcomes.
+              </li>
+              <li>
+                The system shall generate reports summarizing the matching
+                process, including accepted and rejected placements.
+              </li>
+            </ul>
+          </div>
+          <h3>Priority: Perhaps</h3>
+          <div>
+            <ul>
+              <li>N/A</li>
+            </ul>
+          </div>
+          <h3>Priority: Improbable</h3>
+          <div>
+            <h4>-> Notification System</h4>
+            <ul>
+              <li>
+                The system shall send notifications to professors upon
+                completion of the matching process, summarizing matched
+                students.
+              </li>
+              <li>
+                The system shall notify graduate students of their matching
+                status once professors have made their decisions (accepted or
+                rejected).
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
-          <p style="font-weight: bold">
-            2. Preference Submission for Professors
-          </p>
-          <ul>
-            <li>
-              The system shall provide a form for professors to input their
-              preferences for TA and LA candidates.
-            </li>
-            <li>
-              The form shall allow professors to add custom questions to capture
-              specific criteria for matching.
-            </li>
-            <li>
-              The system shall save and retrieve professor preferences for
-              future reference.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">3. Student Profile Creation</p>
-          <ul>
-            <li>
-              The system shall allow graduate students to create profiles with
-              personal details, qualifications, preferences, and constraints.
-            </li>
-            <li>
-              The system shall enable students to specify their desired roles
-              (RA, TA, or LA) and any scheduling conflicts.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">4. Matching Algorithm</p>
-          <ul>
-            <li>
-              The algorithm shall consider constraints (e.g., course
-              prerequisites, funding guarantees) and preferences (e.g.,
-              professor and student preferences) when generating matches.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">
-            5. Review and Decision-Making for Professors
-          </p>
-          <ul>
-            <li>
-              The system shall provide professors with a detailed overview of
-              matched students, including their qualifications and preferences.
-            </li>
-            <li>
-              Professors shall have the option to accept or reject each matched
-              student through the web interface.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">6. Notification System</p>
-          <ul>
-            <li>
-              The system shall send notifications to professors upon completion
-              of the matching process, summarizing matched students.
-            </li>
-            <li>
-              The system shall notify graduate students of their matching status
-              once professors have made their decisions (accepted or rejected).
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">7. Data Management and Reporting</p>
-          <ul>
-            <li>
-              The system shall allow administrators to manage and oversee user
-              accounts, preferences, and matching outcomes.
-            </li>
-            <li>
-              The system shall generate reports summarizing the matching
-              process, including accepted and rejected placements.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">8. User Interface</p>
-          <ul>
-            <li>
-              The system shall have an intuitive and responsive web interface
-              for both professors and students.
-            </li>
-            <li>
-              The interface shall allow easy navigation for submitting
-              preferences, reviewing matches, and accessing notifications.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">9. Integration with External Tools</p>
-          <ul>
-            <li>
-              The system shall have the capability to import and export data
-              from Google Sheets or similar tools to facilitate data entry and
-              reporting.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: bold">10. Accessibility and Security</p>
-          <ul>
-            <li>
-              The system shall comply with accessibility standards to ensure
-              usability for all users.
-            </li>
-            <li>
-              The system shall implement security measures, including data
-              encryption and secure password storage, to protect user
-              information.
-            </li>
-          </ul>
+          <h2>Non-Functional Requirements</h2>
+          <h3>Priority: Definite</h3>
+          <div>
+            <h4>-> User Authentication and Authorization</h4>
+            <ul>
+              <li>
+                The system shall allow professors and graduate students to
+                create user accounts with secure login capabilities.
+              </li>
+              <li>
+                The system shall provide role-based access control, ensuring
+                that professors and students have access to appropriate
+                functionalities.
+              </li>
+            </ul>
+          </div>
+          <h3>Priority: Perhaps</h3>
+          <div>
+            <h4>-> User Interface</h4>
+            <ul>
+              <li>
+                The system shall have an intuitive and responsive web interface
+                for both professors and students.
+              </li>
+              <li>
+                The interface shall allow easy navigation for submitting
+                preferences, reviewing matches, and accessing notifications.
+              </li>
+            </ul>
+            <h4>-> Integration with External Tools</h4>
+            <ul>
+              <li>
+                The system shall have the capability to import and export data
+                from Google Sheets or similar tools to facilitate data entry and
+                reporting.
+              </li>
+            </ul>
+            <h4>-> Accessibility and Security</h4>
+            <ul>
+              <li>
+                The system shall comply with accessibility standards to ensure
+                usability for all users.
+              </li>
+              <li>
+                The system shall implement security measures, including data
+                encryption and secure password storage, to protect user
+                information.
+              </li>
+            </ul>
+          </div>
+          <h3>Priority: Improbable</h3>
+          <div>
+            <ul>
+              <li>N/A</li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
