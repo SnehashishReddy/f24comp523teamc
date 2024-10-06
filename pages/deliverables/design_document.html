@@ -64,6 +64,12 @@
       .page-footer {
         background-color: cyan;
       }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
     </style>
 
     <!-- Crucial JS goes here -->
@@ -297,101 +303,326 @@
           such as ease of use, scalability, and integration capabilities.
         </p>
 
-        <h3 style="color: #2a7ae2; margin-top: 20px">1. Frontend</h3>
-        <p><strong>Technology:</strong> Flutter (Web Interface)</p>
-        <ul style="padding-left: 20px">
-          <li>
-            <strong>Cross-Platform Development:</strong> Flutter allows for a
-            single codebase to serve both web and mobile platforms, ensuring
-            consistency across devices.
-          </li>
-          <li>
-            <strong>Rich UI:</strong> Flutter’s widget-based architecture
-            provides a high degree of customization and performance, enhancing
-            user experience.
-          </li>
-          <li>
-            <strong>Community Support:</strong> A growing community ensures
-            access to resources and plugins, which can expedite development.
-          </li>
-        </ul>
+        <h3 style="color: #2a7ae2; margin-top: 20px">Platform Components</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Technology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Front-End Technologies</td>
+              <td>Flutter (Web Interface)</td>
+            </tr>
+            <tr>
+              <td>Back-End Technologies</td>
+              <td>Firebase (Google Cloud)</td>
+            </tr>
+            <tr>
+              <td>Database Components</td>
+              <td>Firebase Firestore (NoSQL)</td>
+            </tr>
+            <tr>
+              <td>Cloud Platform</td>
+              <td>Firebase (Google Cloud)</td>
+            </tr>
+            <tr>
+              <td>DevOps</td>
+              <td>GitHub Actions (CI/CD Pipeline)</td>
+            </tr>
+            <tr>
+              <td>Deployment</td>
+              <td>GitHub Pages (Free Hosting)</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <h3 style="color: #2a7ae2; margin-top: 20px">2. Backend</h3>
-        <p><strong>Technology:</strong> Firebase (Google Cloud)</p>
-        <ul style="padding-left: 20px">
-          <li>
-            <strong>Serverless Architecture:</strong> Firebase offers a
-            serverless approach that simplifies backend management and reduces
-            operational overhead.
-          </li>
-          <li>
-            <strong>Real-Time Capabilities:</strong> Ideal for applications
-            requiring real-time data updates, which enhances user experience.
-          </li>
-          <li>
-            <strong>Scalability:</strong> Firebase services can scale
-            automatically based on demand, accommodating varying loads without
-            manual intervention.
-          </li>
-        </ul>
-
-        <h3 style="color: #2a7ae2; margin-top: 20px">3. Database</h3>
-        <p><strong>Technology:</strong> Firebase Firestore (NoSQL)</p>
-        <ul style="padding-left: 20px">
-          <li>
-            <strong>Flexible Data Model:</strong> Firestore's NoSQL structure
-            allows for a more flexible schema design, facilitating rapid
-            development.
-          </li>
-          <li>
-            <strong>Real-Time Synchronization:</strong> Supports real-time data
-            synchronization across clients, which is essential for the matching
-            application.
-          </li>
-          <li>
-            <strong>Integration with Firebase:</strong> Seamlessly integrates
-            with other Firebase services, providing a cohesive ecosystem.
-          </li>
-        </ul>
-
-        <h3 style="color: #2a7ae2; margin-top: 20px">4. DevOps</h3>
+        <h3 style="color: #2a7ae2; margin-top: 20px">Front-End Technologies</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flutter</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Cross-Platform Development:</strong> Single codebase
+                    for web and mobile platforms.
+                  </li>
+                  <li>
+                    <strong>Rich UI:</strong> Widget-based architecture enhances
+                    user experience.
+                  </li>
+                  <li>
+                    <strong>Community Support:</strong> Growing community with
+                    resources and plugins.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    Relatively new compared to other front-end technologies,
+                    which may result in fewer established best practices.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Strong Component-Based Architecture:</strong> Easy
+                    to manage and maintain components.
+                  </li>
+                  <li>
+                    <strong>Large Ecosystem:</strong> Wide range of libraries
+                    and support.
+                  </li>
+                  <li>
+                    <strong>Responsive UI:</strong> High performance with
+                    responsive UI development.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    State management can become complex in larger applications.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p>
-          <strong>Technology:</strong> GitHub Actions (Automated CI/CD Pipeline)
+          <strong>Decision:</strong> We selected Flutter for the front-end due
+          to its cross-platform capabilities, ensuring consistency between web
+          and mobile versions, and its rich, customizable UI, which provides an
+          engaging user experience.
         </p>
-        <ul style="padding-left: 20px">
-          <li>
-            <strong>Continuous Deployment:</strong> GitHub Actions enables
-            automated deployment processes, ensuring that updates can be made
-            efficiently and reliably.
-          </li>
-          <li>
-            <strong>Integration with GitHub:</strong> Native integration with
-            GitHub repositories simplifies the setup and management of CI/CD
-            pipelines.
-          </li>
-          <li>
-            <strong>Custom Workflows:</strong> Supports custom workflows,
-            allowing for tailored automation according to project needs.
-          </li>
-        </ul>
 
-        <h3 style="color: #2a7ae2; margin-top: 20px">5. Deployment</h3>
-        <p><strong>Technology:</strong> GitHub Pages (Free Hosting)</p>
-        <ul style="padding-left: 20px">
-          <li>
-            <strong>Cost-Effective:</strong> GitHub Pages offers free hosting,
-            which is ideal for projects with budget constraints.
-          </li>
-          <li>
-            <strong>Simplicity:</strong> Easy to set up and manage, especially
-            for static web applications.
-          </li>
-          <li>
-            <strong>Integration with GitHub:</strong> Allows for direct
-            deployment from the repository, streamlining the development and
-            deployment process.
-          </li>
-        </ul>
+        <h3 style="color: #2a7ae2; margin-top: 20px">Back-End Technologies</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Firebase</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Serverless Architecture:</strong> Simplifies backend
+                    management and reduces operational overhead.
+                  </li>
+                  <li>
+                    <strong>Real-Time Capabilities:</strong> Supports real-time
+                    data updates, enhancing user experience.
+                  </li>
+                  <li>
+                    <strong>Scalability:</strong> Automatically scales based on
+                    demand.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    Limited flexibility for server-side logic and
+                    customizations.
+                  </li>
+                  <li>
+                    Vendor lock-in due to heavy reliance on Google Cloud
+                    services.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Node.js with Express</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>JavaScript-Based:</strong> Easy integration with
+                    JavaScript front-end.
+                  </li>
+                  <li>
+                    <strong>Non-Blocking Architecture:</strong> High performance
+                    for real-time applications.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>Requires careful management of asynchronous code.</li>
+                  <li>Potential for callback hell in complex applications.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Decision:</strong> Firebase was selected for the backend due
+          to its real-time capabilities, serverless architecture, and ease of
+          integration with the rest of the Google Cloud ecosystem, which aligns
+          with our need for scalability and simplicity.
+        </p>
+
+        <h3 style="color: #2a7ae2; margin-top: 20px">Database Components</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Firebase Firestore</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Flexible Data Model:</strong> NoSQL allows for a
+                    flexible schema design.
+                  </li>
+                  <li>
+                    <strong>Real-Time Synchronization:</strong> Data
+                    synchronization across clients.
+                  </li>
+                  <li>
+                    <strong>Integration:</strong> Seamless integration with
+                    other Firebase services.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    Complex querying capabilities are limited compared to SQL
+                    databases.
+                  </li>
+                  <li>
+                    High read and write costs if the data structure is not
+                    optimized.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Cosmos DB (Azure)</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Managed Service:</strong> Fully managed and
+                    scalable, supporting multiple data models.
+                  </li>
+                  <li>
+                    <strong>Global Distribution:</strong> Supports globally
+                    distributed applications.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>Higher costs for large-scale usage.</li>
+                  <li>
+                    Less flexibility in customization compared to open-source
+                    solutions.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Decision:</strong> Firebase Firestore was chosen as the
+          database for its flexibility and integration with the rest of the
+          Firebase platform, providing a consistent and real-time experience for
+          data synchronization.
+        </p>
+
+        <h3 style="color: #2a7ae2; margin-top: 20px">Cloud Platform</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Firebase (Google Cloud)</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Integrated Services:</strong> Seamless integration
+                    with Firebase and other Google Cloud services.
+                  </li>
+                  <li>
+                    <strong>Scalable Solutions:</strong> Scales based on
+                    application needs.
+                  </li>
+                  <li>
+                    <strong>Real-Time Data:</strong> Effective real-time
+                    database services.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    Vendor lock-in may lead to long-term dependency on Google
+                    services.
+                  </li>
+                  <li>Higher costs for large-scale applications.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Azure</td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    <strong>Strong Integration:</strong> Excellent support for
+                    deploying and managing services.
+                  </li>
+                  <li>
+                    <strong>Media Services:</strong> Robust support for video
+                    and media processing.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul style="list-style-type: none; padding: 0">
+                  <li>
+                    Costs can escalate with high computational requirements.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Decision:</strong> Google Cloud was selected for its seamless
+          integration with Firebase, scalability, and ease of use, which
+          supports our real-time, data-driven requirements.
+        </p>
 
         <h3 style="color: #2a7ae2; margin-top: 20px">Conclusion</h3>
         <p>
