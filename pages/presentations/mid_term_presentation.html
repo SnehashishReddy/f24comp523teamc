@@ -64,6 +64,28 @@
       .page-footer {
         background-color: cyan;
       }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        max-width: 90vw; /* Set max-width for better desktop view */
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (height / width * 100) */
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     </style>
 
     <!-- Crucial JS goes here -->
@@ -297,141 +319,16 @@
           margin: 0 auto;
         "
       >
-        <h1 style="color: #2a7ae2; margin-bottom: 20px">Journal</h1>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">09/OCT/2024 11:00AM to 11:30AM [COACH]</h4>
-          <p>
-            Coach meeting to discuss the status of the project, the midterm
-            presentation, our architecture diagram, and distribution of platform
-            selection.
-          </p>
-        </div>
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">06/OCT/2024 1:00PM to 2:00PM [TEAM]</h4>
-          <p>
-            Team meeting to discuss the architecture diagram, platform code
-            distribution, discuss the new client data, and the midterm
-            presentation.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">04/OCT/2024 1:30PM to 2:30PM [CLIENT]</h4>
-          <p>
-            Met with the client to obtain data regarding the previous matching
-            and discuss some additional requirements like the admin portal to
-            give the admins flexibility to edit the final matches.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">02/OCT/2024 11:00AM to 11:30AM [COACH]</h4>
-          <p>
-            Coach meeting to discuss progress so far on the project, and discuss
-            the pros and cons of platform selection.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">30/SEP/2024 3:30PM to 4:00PM [TEAM]</h4>
-          <p>
-            Team meeting to discuss the final algorithm required for the
-            matching. We were able to come to a conclusion that the problem
-            we're required to solve is not a linear programming or a stable
-            matching problem. We decided to go ahead with a probabilistic
-            algorithm instead.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">25/SEP/2024 4:00PM to 4:30PM [TEAM]</h4>
-          <p>
-            Team meeting to discuss the final algorithm. We were able to come to
-            the conclusion that a stable matching or a linear programming
-            algorithm is not required to process the second matching algorithm
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">25/SEP/2024 11:00AM [COACH]</h4>
-          <p>
-            Meeting with coach to review changes to the problem statement, and
-            decide work for the week.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">25/SEP/2024 10:30AM [TEAM]</h4>
-          <p>
-            Team meeting to discuss user stories, and decide on the platform to
-            use.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">24/SEP/2024 11:00AM [CLIENT]</h4>
-          <p>
-            Met with the client to discuss the new requirements, finalize the
-            flow of the process, and decide which algorithms to use in the end.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">20/SEP/2024 8:00PM [TEAM]</h4>
-          <p>
-            Team meeting to discuss and brainstorm questions to be asked to the
-            client in the next meeting.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">18/SEP/2024 11:00AM [COACH]</h4>
-          <p>
-            Met with Sam Shi on a Zoom call to discuss progress on the project.
-            Ashish was not able to attend this meeting.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">16/SEP/2024 8:00PM [TEAM]</h4>
-          <p>
-            Team meeting to discuss options between frontend frameworks:
-            Flutter, ReactJS. Backend options considered were: JavaScript,
-            Python, Java, and GCP.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">11/SEP/2024 11:30AM [TEAM]</h4>
-          <p>
-            Met on a Zoom call to discuss requirements, set deadlines for the
-            project website, and discuss team roles.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">11/SEP/2024 11:00AM [COACH]</h4>
-          <p>
-            Met with Sam Shi on a Zoom call to discuss the project, get to know
-            each other, and track progress on the project website.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">10/SEP/2024 11:00AM [CLIENT]</h4>
-          <p>
-            Met with client for basic requirement analysis. Snehashish was not
-            able to attend.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">04/SEP/2024 2:30PM [TEAM]</h4>
-          <p>
-            Met in the library to discuss development strategy, plan for client
-            meeting, and decide on the project platform.
-          </p>
+        <h2 style="color: #2a7ae2; margin-bottom: 10px">
+          Mid-Term Presentation
+        </h2>
+        <div class="iframe-container">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vRp-Hs1aYH9IFhfm5erS6TXuRkeAAXXgIwfOtWt5Dk7Sj__qSwsvyCWNiKs_5bU7Q/embed?start=true&loop=false&delayms=5000"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
         </div>
       </div>
     </main>
