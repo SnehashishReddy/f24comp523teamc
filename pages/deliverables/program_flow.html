@@ -64,28 +64,6 @@
       .page-footer {
         background-color: cyan;
       }
-
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-
-      .iframe-container {
-        position: relative;
-        width: 100%;
-        max-width: 90vw; /* Set max-width for better desktop view */
-        padding-top: 56.25%; /* 16:9 Aspect Ratio (height / width * 100) */
-      }
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
     </style>
 
     <!-- Crucial JS goes here -->
@@ -323,6 +301,7 @@
     </header>
 
     <!-- Page Main Content -->
+    <!-- Page Main Content -->
     <main class="flex-grow-1">
       <div
         style="
@@ -331,18 +310,19 @@
           line-height: 1.6;
           max-width: 800px;
           margin: 0 auto;
+          padding: 20px;
         "
       >
-        <h2 style="color: #2a7ae2; margin-bottom: 10px">
-          Mid-Term Presentation
-        </h2>
-        <div class="iframe-container">
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vRp-Hs1aYH9IFhfm5erS6TXuRkeAAXXgIwfOtWt5Dk7Sj__qSwsvyCWNiKs_5bU7Q/embed?start=true&loop=false&delayms=5000"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-          ></iframe>
+        <h1 style="color: #2a7ae2; margin-bottom: 20px">
+          Program Flow Diagram for Matchwise
+        </h1>
+        <div class="text-center">
+          <img
+            src="assets/program_flow.png"
+            alt="Matchwise Program Logic Flow"
+            class="img-fluid"
+            style="max-width: 100%; height: auto"
+          />
         </div>
       </div>
     </main>
