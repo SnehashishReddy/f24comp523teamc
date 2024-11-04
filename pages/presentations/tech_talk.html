@@ -64,6 +64,28 @@
       .page-footer {
         background-color: cyan;
       }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        max-width: 90vw; /* Set max-width for better desktop view */
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (height / width * 100) */
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     </style>
 
     <!-- Crucial JS goes here -->
@@ -218,6 +240,13 @@
                         >Program Logic Flow Diagram</a
                       >
                     </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages/deliverables/apples_reflection.html"
+                        >APPLES Reflection</a
+                      >
+                    </li>
                   </ul>
                 </li>
 
@@ -284,13 +313,6 @@
                         >Ethics 1</a
                       >
                     </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="pages/assignments/apples_reflection.html"
-                        >APPLES Reflection</a
-                      >
-                    </li>
                   </ul>
                 </li>
               </ul>
@@ -302,7 +324,27 @@
 
     <!-- Page Main Content -->
     <main class="flex-grow-1">
-      <h1>Navigation Testing</h1>
+      <div
+        style="
+          font-family: Arial, sans-serif;
+          color: #333;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
+        "
+      >
+        <h2 style="color: #2a7ae2; margin-bottom: 10px">
+          Tech Talk on Flutter
+        </h2>
+        <div class="iframe-container">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTgioBhyU8y8iY7bVKfa9BGiBgPw69ZV8L-L4uGnaYUoCR0JPjqUx4lVngqcZHl-XlpTn0jt56Z93MV/embed?start=false&loop=false&delayms=5000"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
+        </div>
+      </div>
     </main>
 
     <!-- Page Footer -->
