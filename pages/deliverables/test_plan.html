@@ -320,134 +320,140 @@
       >
         <h1 style="color: #2a7ae2; margin-bottom: 20px">Ideal Testing Plan</h1>
 
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">1. Unit Tests</h2>
+        <h2 style="color: #2a7ae2; margin-bottom: 20px">1. Unit Testing</h2>
+        <p>
+          Objective: Verify the correctness of individual components and ensure
+          each module behaves as expected.
+        </p>
+        <p>
+          Approach: Manual testing for screen pages and automated testing for
+          backend functionalities.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Write unit tests for individual functions:</li>
-          <ul style="padding-left: 20px">
-            <li>extract_input</li>
-            <li>generate_master_match_df</li>
-            <li>create_match_entry</li>
-            <li>calculate_probability</li>
-            <li>perform_ilp_matching</li>
-            <li>convert_to_custom_json</li>
-          </ul>
-          <li>Use a testing framework (Jest or Mocha).</li>
-          <li>Mock dependencies and external services.</li>
+          <li>
+            <strong>Frontend Components:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Input forms (e.g., preference submission forms, student profile
+                creation).
+              </li>
+              <li>UI validation for form fields.</li>
+              <li>
+                Navigation flows (e.g., switching between views for professors
+                and students).
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Backend Services:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Data validation methods (e.g., input sanitization for
+                preferences and profiles).
+              </li>
+              <li>
+                Matching algorithm functions (e.g., constraint evaluation and
+                preference weighting).
+              </li>
+              <li>Authentication and role-based access modules.</li>
+            </ul>
+          </li>
         </ul>
 
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">2. Manual Testing</h2>
+        <h3 style="color: #2a7ae2">Tools</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>
-            Test the UI for different user roles (e.g., students, faculty,
-            administrators).
-          </li>
-          <li>Verify form submissions and data display.</li>
-          <li>Check responsiveness on different devices and browsers.</li>
-          <li>Test error handling and edge cases.</li>
-        </ul>
-
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          3. Functional Testing
-        </h2>
-        <h3 style="color: #2a7ae2">a. Manual Testing:</h3>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Verify the end-to-end flow of the matching process.</li>
-          <li>Test different scenarios with various input combinations.</li>
-          <li>Validate output formats and content.</li>
-        </ul>
-        <h3 style="color: #2a7ae2">
-          b. Automated Tests using Firebase Test Suite:
-        </h3>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Write integration tests using the Firebase Test SDK.</li>
-          <li>Test authentication flows.</li>
-          <li>Verify Firestore read/write operations.</li>
-          <li>Test Cloud Functions triggers and responses.</li>
-        </ul>
-
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          4. Integration Testing
-        </h2>
-        <h3 style="color: #2a7ae2">a. Manual Testing:</h3>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>
-            Test the entire workflow from user input to final matching results.
-          </li>
-          <li>Verify data consistency across different parts of the system.</li>
-        </ul>
-        <h3 style="color: #2a7ae2">b. Automated Testing:</h3>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Create a test dataset based on previous year's data.</li>
-          <li>
-            Write automated tests to verify correct generation of the master
-            match DataFrame.
-          </li>
-          <li>
-            Compare algorithm output with expected results from previous years.
-          </li>
-          <li>Test edge cases and various input scenarios.</li>
+          <li>Manual UI verification.</li>
+          <li>Automated tests using Flutter Test Suite.</li>
         </ul>
 
         <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          5. Performance Testing
+          2. Functional Testing
         </h2>
+        <p>
+          Objective: Ensure that the application meets the functional
+          requirements as described.
+        </p>
+        <p>
+          Approach: Combine manual and automated tests to validate key
+          functionalities.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
           <li>
-            Test the system with a large number of faculty and student
-            preferences.
+            <strong>Manual Testing:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Test each screen and user flow across user types (professors,
+                students, admins).
+              </li>
+              <li>
+                Verify the functionality of forms, navigation, and
+                review/decision interfaces.
+              </li>
+            </ul>
           </li>
-          <li>Measure response times and resource usage.</li>
-          <li>Identify and optimize bottlenecks in the matching algorithm.</li>
+          <li>
+            <strong>Automated Testing:</strong>
+            <ul style="padding-left: 20px">
+              <li>Matching algorithm scenarios with diverse profiles.</li>
+              <li>
+                Data management tasks, including account creation and reporting.
+              </li>
+              <li>
+                Authentication workflows for secure logins and role-based access
+                control.
+              </li>
+            </ul>
+          </li>
         </ul>
 
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">6. Security Testing</h2>
+        <h3 style="color: #2a7ae2">Tools</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Verify proper authentication and authorization.</li>
-          <li>
-            Test for common vulnerabilities (e.g., injection attacks, XSS).
-          </li>
-          <li>
-            Ensure data privacy and proper handling of sensitive information.
-          </li>
+          <li>Flutter Test Suite for automated functional tests.</li>
+          <li>Browser developer tools for manual UI checks.</li>
         </ul>
 
         <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          7. Usability Testing
+          3. Integration Testing
         </h2>
+        <p>
+          Objective: Validate the interaction and data flow between system
+          modules.
+        </p>
+        <p>
+          Approach: Both manual and automated testing methods based on
+          real-world scenarios.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
           <li>
-            Conduct user acceptance testing with actual faculty and students.
-          </li>
-          <li>Gather feedback on the user interface and overall experience.</li>
-        </ul>
-
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          8. Regression Testing
-        </h2>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>
-            After each significant change or bug fix, run a suite of automated
-            tests to ensure no new issues are introduced.
+            <strong>Matching Algorithm:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Match students to positions based on previous year’s data.
+              </li>
+              <li>
+                Test multiple combinations of constraints, preferences, and
+                qualifications.
+              </li>
+            </ul>
           </li>
         </ul>
 
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">9. Load Testing</h2>
+        <h3 style="color: #2a7ae2">Tools</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>
-            Simulate concurrent users submitting preferences and requesting
-            matches.
-          </li>
-          <li>Verify system stability under heavy load.</li>
+          <li>Manual testing with Postman for Firebase functions.</li>
+          <li>Manual validation of reports and matched results.</li>
         </ul>
 
-        <h2 style="color: #2a7ae2; margin-bottom: 20px">
-          10. Error Handling and Recovery Testing
-        </h2>
-        <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Test system behavior with invalid inputs.</li>
-          <li>Verify proper error messages and logging.</li>
-          <li>Test recovery procedures in case of system failures.</li>
-        </ul>
+        <p>
+          This structured approach ensures comprehensive testing of all system
+          components to deliver a reliable RA Matching solution.
+        </p>
       </div>
     </main>
 
