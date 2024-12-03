@@ -332,237 +332,205 @@
           margin: 0 auto;
         "
       >
-        <h1 style="color: #2a7ae2; margin-bottom: 20px">1. User Stories</h1>
+        <h1 style="color: #2a7ae2; margin-bottom: 20px">Documentation Plan</h1>
 
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">User Story A</h4>
-          <p style="font-weight: bold">
-            As a professor, I want to enter my preferences for RA roles to
-            ensure the best fit for my research.
-          </p>
+        <section>
+          <h2 style="color: #2a7ae2; margin-bottom: 20px">Users</h2>
           <p>
-            A user-friendly template form will allow professors to specify their
-            criteria and add custom questions to capture essential information
-            for satisfactory matches.
+            The primary users of our application are stakeholders from the
+            Department of Computer Science at UNC-CH, including:
           </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">User Story B</h4>
-          <p style="font-weight: bold">
-            As a professor, I want to review graduate student's qualifications
-            and preferences to make informed decisions.
-          </p>
+          <ul>
+            <li>RA Applicants</li>
+            <li>Faculty Members (seeking RAs)</li>
+            <li>Administrators (faculty managing RA assignments)</li>
+          </ul>
           <p>
-            After matching, professors will access a detailed overview of
-            matched students, including their qualifications and preferences,
-            enabling them to generate a list of preferred candidates.
+            The Technical Documentation, in conjunction with the Handoff Plan,
+            aims to provide users with comprehensive insights into the
+            application's technical aspects. This will enable users to install,
+            reproduce, and, if necessary, modify the application in the future.
           </p>
-        </div>
+        </section>
 
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">User Story C</h4>
-          <p style="font-weight: bold">
-            As a professor, I want updates on the matching process to prepare
-            for the semester.
-          </p>
+        <section>
+          <h2 style="color: #2a7ae2; margin-bottom: 20px">
+            Technical Documentation
+          </h2>
           <p>
-            Professors will receive notifications once matching is complete.
+            This document provides a detailed overview of the technology stack
+            used in the project. It also includes step-by-step instructions for
+            setting up the required tools and configuring the application after
+            downloading the code from the Git repository.
           </p>
-        </div>
 
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">User Story D</h4>
-          <p style="font-weight: bold">
-            As a graduate student, I want to specify my preferences for RA, TA,
-            or LA positions to increase my chances of matching with a suitable
-            role.
-          </p>
-          <p>
-            Students will fill out an intuitive form detailing their interests
-            and constraints, ensuring the matching process considers their
-            availability.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 30px">
-          <h4 style="color: #2a7ae2">User Story E</h4>
-          <p style="font-weight: bold">
-            As a graduate student, I want notifications about my matching status
-            to stay informed.
-          </p>
-          <p>
-            Students will receive timely notifications regarding their
-            acceptance or rejection in roles, allowing them to prepare
-            accordingly for the semester.
-          </p>
-        </div>
-
-        <h1 style="color: #2a7ae2; margin-bottom: 20px">2. Requirements</h1>
-
-        <h2 style="color: #2a7ae2">Functional Requirements</h2>
-
-        <h3 style="color: #2a7ae2">Priority: Definite</h3>
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">
-            -> Preference Submission for Professors
+          <h3 style="color: #2a7ae2; margin-bottom: 20px">
+            Technologies and Code Repositories
+          </h3>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            Project Repositories
           </h4>
-          <ul style="padding-left: 20px">
+          <p>
+            The complete source code for this project is hosted on GitHub across
+            two repositories, providing separate management for backend and
+            frontend components.
+          </p>
+          <ul>
             <li>
-              The system shall provide a form for professors to input their
-              preferences for TA and LA candidates.
+              <strong>Backend Repository:</strong>
+              <a
+                href="https://github.com/yashas-hm-unc/matchwise-backend"
+                target="_blank"
+                >https://github.com/yashas-hm-unc/matchwise-backend</a
+              >
             </li>
             <li>
-              The form shall allow professors to add custom questions to capture
-              specific criteria for matching.
-            </li>
-            <li>
-              The system shall save and retrieve professor preferences for
-              future reference.
-            </li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">-> Student Profile Creation</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall allow graduate students to create profiles with
-              personal details, qualifications, preferences, and constraints.
-            </li>
-            <li>
-              The system shall enable students to specify their desired roles
-              (RA, TA, or LA) and any scheduling conflicts.
+              <strong>Frontend Repository:</strong>
+              <a
+                href="https://github.com/yashas-hm-unc/matchwise"
+                target="_blank"
+                >https://github.com/yashas-hm-unc/matchwise</a
+              >
             </li>
           </ul>
-        </div>
-
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">-> Matching Algorithm</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The algorithm shall consider constraints (e.g., course
-              prerequisites, funding guarantees) and preferences (e.g.,
-              professor and student preferences) when generating matches.
-            </li>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">Technologies Used</h4>
+          <ul>
+            <li><strong>Backend:</strong> Firebase (Python)</li>
+            <li><strong>Frontend:</strong> Flutter (Dart)</li>
           </ul>
-        </div>
+          <p>For a detailed description of the project, please refer to:</p>
+          <ul>
+            <li>Design Document</li>
+            <li>Architecture Diagram for Matchwise</li>
+          </ul>
+        </section>
 
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">
-            -> Review and Decision-Making for Professors
+        <section>
+          <h2 style="color: #2a7ae2; margin-bottom: 20px">
+            Setting up Backend (Firebase)
+          </h2>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">Add the SDK</h4>
+          <p>
+            If you are setting up a new project, you need to install the SDK for
+            the language of your choice. The Firebase Admin Python SDK is
+            available via pip. You can install the library for all users via
+            sudo:
+          </p>
+          <pre>$ sudo pip install firebase-admin</pre>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            After Installing the Firebase SDK
           </h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall provide professors with a detailed overview of
-              matched students, including their qualifications and preferences.
-            </li>
-            <li>
-              Professors shall have the option to accept or reject each matched
-              student through the web interface.
-            </li>
-          </ul>
-        </div>
-
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">-> Data Management and Reporting</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall allow administrators to manage and oversee user
-              accounts, preferences, and matching outcomes.
-            </li>
-            <li>
-              The system shall generate reports summarizing the matching
-              process, including accepted and rejected placements.
-            </li>
-          </ul>
-        </div>
-
-        <h3 style="color: #2a7ae2">Priority: Perhaps</h3>
-        <div style="margin-bottom: 20px">
-          <ul style="padding-left: 20px">
-            <li>N/A</li>
-          </ul>
-        </div>
-
-        <h3 style="color: #2a7ae2">Priority: Improbable</h3>
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">-> Notification System</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall send notifications to professors upon completion
-              of the matching process, summarizing matched students.
-            </li>
-            <li>
-              The system shall notify graduate students of their matching status
-              once professors have made their decisions (accepted or rejected).
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="color: #2a7ae2">Non-Functional Requirements</h2>
-
-        <h3 style="color: #2a7ae2">Priority: Definite</h3>
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">
-            -> User Authentication and Authorization
+          <p>Sign into Firebase using your Google account.</p>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            Steps to Run Firebase Functions Locally:
           </h4>
-          <ul style="padding-left: 20px">
+          <h5>Prerequisites:</h5>
+          <ul>
             <li>
-              The system shall allow professors and graduate students to create
-              user accounts with secure login capabilities.
+              Install Python and an IDE (e.g., PyCharm, VS Code, IntelliJ IDEA).
             </li>
             <li>
-              The system shall provide role-based access control, ensuring that
-              professors and students have access to appropriate
-              functionalities.
+              Firebase Admin Python SDK requires Python 3.7+ (recommend 3.8+).
             </li>
+            <li>Install Git (optional: GitHub Desktop).</li>
           </ul>
-        </div>
+          <ol>
+            <li>
+              Clone the repository:
+              <pre>
+$ git clone https://github.com/yashas-hm-unc/matchwise-backend</pre
+              >
+            </li>
+            <li>
+              Install Python dependencies:
+              <pre>$ pip install -r requirements.txt</pre>
+            </li>
+            <li>
+              Install Firebase CLI:
+              <pre>$ npm install -g firebase-tools</pre>
+            </li>
+            <li>
+              Log into Firebase:
+              <pre>$ firebase login</pre>
+            </li>
+            <li>
+              Start the Firebase Emulator Suite:
+              <pre>$ firebase emulators:start</pre>
+            </li>
+          </ol>
+          <p>
+            You can access Firebase functions by opening a web browser and
+            navigating to
+            <a href="http://127.0.0.1:4000/functions" target="_blank"
+              >http://127.0.0.1:4000/functions</a
+            >.
+          </p>
+        </section>
 
-        <h3 style="color: #2a7ae2">Priority: Perhaps</h3>
-        <div style="margin-bottom: 20px">
-          <h4 style="color: #2a7ae2">-> User Interface</h4>
-          <ul style="padding-left: 20px">
+        <section>
+          <h2 style="color: #2a7ae2; margin-bottom: 20px">
+            Setting up Frontend (Flutter)
+          </h2>
+          <p>
+            Flutter is a cross-platform UI/UX development tool which uses Dart
+            language to configure views.
+          </p>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            Install the Flutter SDK
+          </h4>
+          <p>
+            For detailed setup instructions based on your development platform,
+            visit the official guide:
+            <a
+              href="https://flutter.dev/docs/get-started/install"
+              target="_blank"
+              >Flutter Installation Guide</a
+            >.
+          </p>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            Running Flutter Frontend
+          </h4>
+          <pre>
+$ firebase login
+$ flutter configure
+$ flutter run lib/main.dart
+      </pre
+          >
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">Install the IDE</h4>
+          <p>
+            You can either use VS Code or IntelliJ Idea. The official Flutter
+            installation page has detailed instructions on how to install
+            Flutter SDK on VS Code, so it might be convenient to work with it.
+          </p>
+          <h4 style="color: #2a7ae2; margin-bottom: 20px">
+            Add Firebase to your Flutter App
+          </h4>
+          <p>
+            To integrate Firebase into your Flutter app, follow these steps:
+          </p>
+          <ul>
             <li>
-              The system shall have an intuitive and responsive web interface
-              for both professors and students.
+              Install Tools: Set up the required command-line tools for Firebase
+              integration.
             </li>
             <li>
-              The interface shall allow easy navigation for submitting
-              preferences, reviewing matches, and accessing notifications.
+              Configure the App: Update your app's settings to connect it to
+              your Firebase project.
+            </li>
+            <li>
+              Initialize Firebase: Add initialization code to your app to enable
+              Firebase features.
             </li>
           </ul>
-
-          <h4 style="color: #2a7ae2">-> Integration with External Tools</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall have the capability to import and export data
-              from Google Sheets or similar tools to facilitate data entry and
-              reporting.
-            </li>
-          </ul>
-
-          <h4 style="color: #2a7ae2">-> Accessibility and Security</h4>
-          <ul style="padding-left: 20px">
-            <li>
-              The system shall comply with accessibility standards to ensure
-              usability for all users.
-            </li>
-            <li>
-              The system shall implement security measures, including data
-              encryption and secure password storage, to protect user
-              information.
-            </li>
-          </ul>
-        </div>
-
-        <h3 style="color: #2a7ae2">Priority: Improbable</h3>
-        <div style="margin-bottom: 20px">
-          <ul style="padding-left: 20px">
-            <li>N/A</li>
-          </ul>
-        </div>
+          <p>
+            For detailed guidance, visit the
+            <a
+              href="https://firebase.google.com/docs/flutter/setup"
+              target="_blank"
+              >Firebase Setup for Flutter</a
+            >.
+          </p>
+        </section>
       </div>
     </main>
 

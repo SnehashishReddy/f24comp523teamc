@@ -225,6 +225,20 @@
                         >D5. Testing Plan</a
                       >
                     </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages/deliverables/documentation_plan.html"
+                        >D6. Documentation Plan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages/deliverables/hand_off_plan.html"
+                        >D7. Handoff Plan</a
+                      >
+                    </li>
                   </ul>
                 </li>
 
@@ -459,15 +473,161 @@
           Realistic Testing Plan
         </h1>
 
-        <h3 style="color: #2a7ae2">Manual Testing</h3>
+        <h2 style="color: #2a7ae2; margin-bottom: 20px">1. Unit Testing</h2>
+        <p>
+          Objective: Verify the correctness of individual components and ensure
+          each module behaves as expected.
+        </p>
+        <p>
+          Approach: Conduct thorough manual testing to validate individual
+          modules and their functionalities.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
         <ul style="margin-bottom: 20px; padding-left: 20px">
-          <li>Manual testing with Postman for Firebase functions.</li>
-          <li>Manual validation of reports and matched results.</li>
           <li>
-            Manual testing of the frontend, and how well it integrates with
-            Firestore
+            <strong>Frontend Components:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Validate input forms for correct behavior and handling of edge
+                cases (e.g., invalid input, empty fields).
+              </li>
+              <li>
+                Ensure UI validation provides appropriate feedback for errors
+                and successful operations.
+              </li>
+              <li>
+                Verify navigation flows for seamless transitions between user
+                views (e.g., professors, students, admins).
+              </li>
+              <li>
+                Confirm responsiveness across various screen sizes and devices.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Backend Services:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Manually test data validation methods, ensuring all input data
+                is sanitized and stored correctly.
+              </li>
+              <li>
+                Validate matching algorithm calculations by creating test cases
+                with predefined outcomes and verifying the results.
+              </li>
+              <li>
+                Confirm authentication workflows (e.g., secure login, role-based
+                access) by simulating various user scenarios.
+              </li>
+            </ul>
           </li>
         </ul>
+
+        <h2 style="color: #2a7ae2; margin-bottom: 20px">
+          2. Functional Testing
+        </h2>
+        <p>
+          Objective: Ensure the application meets the functional requirements as
+          described in the specifications.
+        </p>
+        <p>
+          Approach: Use manual testing techniques to validate core
+          functionalities and simulate user interactions.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
+        <ul style="margin-bottom: 20px; padding-left: 20px">
+          <li>
+            <strong>User Flows:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Test each screen and user flow across all user types
+                (professors, students, admins).
+              </li>
+              <li>
+                Verify submission forms, navigation, and feedback mechanisms for
+                correctness and usability.
+              </li>
+              <li>
+                Check user interface consistency and ensure all elements are
+                intuitive and accessible.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Matching Algorithm:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Create real-world test cases to simulate diverse student and
+                faculty preferences.
+              </li>
+              <li>
+                Manually validate matched results against expected outputs to
+                confirm adherence to constraints.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 style="color: #2a7ae2; margin-bottom: 20px">
+          3. Integration Testing
+        </h2>
+        <p>
+          Objective: Validate the interaction and data flow between different
+          system modules to ensure smooth functionality.
+        </p>
+        <p>
+          Approach: Perform manual testing based on real-world scenarios and
+          interactions between modules.
+        </p>
+
+        <h3 style="color: #2a7ae2">Scope</h3>
+        <ul style="margin-bottom: 20px; padding-left: 20px">
+          <li>
+            <strong>Module Interactions:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Simulate end-to-end workflows, such as preference submission to
+                final assignment, to validate data flow.
+              </li>
+              <li>
+                Test error handling and data integrity during module
+                interactions (e.g., form submissions, matching outcomes).
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Reports and Outputs:</strong>
+            <ul style="padding-left: 20px">
+              <li>
+                Manually verify the accuracy of generated reports and matched
+                results by cross-referencing with input data.
+              </li>
+              <li>
+                Validate the clarity and comprehensibility of system-generated
+                reports and notifications.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3 style="color: #2a7ae2">Tools</h3>
+        <ul style="margin-bottom: 20px; padding-left: 20px">
+          <li>
+            Browser developer tools for debugging and validating UI components.
+          </li>
+          <li>
+            Manual validation using spreadsheet tools for cross-checking
+            matching results.
+          </li>
+        </ul>
+
+        <p>
+          This realistic, manual-only approach ensures thorough validation of
+          all components and workflows, delivering a reliable RA Matching
+          solution tailored to the project's needs.
+        </p>
       </div>
     </main>
 
